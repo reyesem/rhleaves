@@ -1,0 +1,26 @@
+#' Leaf Attributes Dataset
+#'
+#' Attributes measured on a sample of leaves collected from the living walls at Rose-Hulman Institute of Technology in April, 2025.
+#'
+#' See the Data Collection vignette for a description of the data.
+#'
+#' In addition to the data presented here, the images used to extract the `Supervised` and `Unsupervised` measurements are available within the package.  These are the in compressed ZIP files: `original-images.zip` contains the original images, `oriented-images.zip` renumbers the images and orients each the same way, and `extracted-images.zip` is the result of extracting the leaf region from each photo.
+#'
+#' @format A data frame with 200 rows and 10 variables:
+#' \describe{
+#'   \item{Wall}{Indicator of which wall the leaf was taken from (Moench, Union).}
+#'   \item{Location}{Indicator of location on wall from which leaf was taken (Upper Left, Upper Right, Lower Left, Lower Right).}
+#'   \item{Species}{Indicator of species of leaf (Dwarf Anthurium, Ficus Elastica Burgundy, Neon Pothos, Philodendron Cordatum, Schefflera Luseane, Silver Satin Pothos, Syngonium Podophyllum).}
+#'   \item{Stem Diameter}{Diameter (millimeters) of the stem at the base of the leaf.}
+#'   \item{Mass}{Mass (grams) of leaf without stem.}
+#'   \item{Length}{Length (centimeters) of leaf along midrib. For syngonium podophyllum species, length is longest vertical distance from tip when oriented with tip upward.}
+#'   \item{Width}{Width (centimeters) of leaf at widest point perpendicular to midrib.}
+#'   \item{Image Name}{File name corresponding to the photo of the leaf.}
+#'   \item{Supervised Length}{Length (centimeters) of leaf estimated from the image after leaf was extracted using photo software.}
+#'   \item{Supervised Width}{Width (centimeters) of the leaf estimated from the image after leaf was extracted using photo software.}
+#'   \item{Supervised Area}{Area (square centimeters) of the leaf estimated from the image after leaf was extracted using photo software.}
+#'   \item{Unsupervised Length}{Length (centimeters) of leaf estimated from the image using the same settings on all images.}
+#'   \item{Unsupervised Width}{Width (centimeters) of the leaf estimated from the image using the same settings on all images.}
+#'   \item{Unsupervised Area}{Area (square centimeters) of the leaf estimated from the image using the same settings on all images.}
+#' }
+"rhleaves"

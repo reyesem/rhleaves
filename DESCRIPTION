@@ -1,0 +1,28 @@
+Package: rhleaves
+Type: Package
+Title: Leaf attributes from plants at Rose-Hulman Institute of Technology
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Eric", "Reyes",
+      email = "reyesem@rose-hulman.edu",
+      role = c("aut", "cre")
+    )
+  )
+Description: Rose-Hulman Institute of Technology maintains to living walls on
+    campus.  Each living wall has several species of plants with almond-shaped
+    leaves.  A sample of the leaves was obtained in April, 2025 and various
+    attributes measured.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    ggplot2,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Imports: 
+    imager
+Depends: 
+    R (>= 4.1)
+RoxygenNote: 7.3.2
