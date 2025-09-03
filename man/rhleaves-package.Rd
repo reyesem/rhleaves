@@ -17,6 +17,14 @@ of a leaf from an image.
 The dataset is called `rhleaves` and the function for computing the
 dimensions of a leaf from its image is `leaf_dimensions()`.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://reyesem.github.io/rhleaves}
+  \item \url{https://reyesem.github.io/rhleaves/}
+}
+
+}
 \author{
 \strong{Maintainer}: Eric Reyes \email{reyesem@rose-hulman.edu}
 

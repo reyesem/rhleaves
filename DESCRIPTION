@@ -9,6 +9,7 @@ Authors@R: c(
       role = c("aut", "cre")
     )
   )
+URL: https://reyesem.github.io/rhleaves, https://reyesem.github.io/rhleaves/
 Description: Rose-Hulman Institute of Technology maintains to living walls on
     campus.  Each living wall has several species of plants with almond-shaped
     leaves.  A sample of the leaves was obtained in April, 2025 and various

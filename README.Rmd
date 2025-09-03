@@ -128,7 +128,7 @@ lm(`Supervised Area` ~ 1 + `Unsupervised Area`, data = rhleaves) |>
   summary()
 ```
 
-```{r}
+```{r, fig.alt='Scatterplot with supervised area on the y-axis and unsupervised area on the x-axis; a best-fit line is overlayed. There is a strong positive linear relationship, but there is a cluster of leaves with unsupervised areas below 20 square centimeters for which the relationship is poor.'}
 ggplot(rhleaves) +
   aes(x = `Unsupervised Area`,
       y = `Supervised Area`) +

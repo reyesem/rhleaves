@@ -159,7 +159,7 @@ ggplot(rhleaves) +
   theme_minimal()
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-6-1.png" alt="Scatterplot with supervised area on the y-axis and unsupervised area on the x-axis; a best-fit line is overlayed. There is a strong positive linear relationship, but there is a cluster of leaves with unsupervised areas below 20 square centimeters for which the relationship is poor." width="100%" />
 
 A second course in statistics might consider a linear regression of the
 form
