@@ -20,9 +20,9 @@
 #' @export
 
 extract_calibration_square <- function(im,
-                                      rmin,
-                                      gmax,
-                                      bmax) {
+                                      rmin = 0.8,
+                                      gmax = 0.6,
+                                      bmax = 0.6) {
 
   #RGB values must be in interval (0, 1)
   if (rmin < 0 || rmin > 1 || gmax < 0 || gmax > 1 || bmax < 0 || bmax > 1) {
@@ -50,7 +50,8 @@ extract_calibration_square <- function(im,
 #'
 #' @param im a `cimg` object.
 #' @param calibration_square one-dimensional pixset the same size as `im` that
-#' represents a calibration square area we know to ignore.
+#' represents a calibration square area we know to ignore. If missing, assumed
+#' to be already removed from image.
 #' @param args.medianblur named list of arguments to be passed to
 #' [imager::medianblur()]. Default is `list('n' = 10, 'threshold' = 0.5)`.
 #' @param args.threshold named list of arguments to be passed to
@@ -70,7 +71,10 @@ extract_leaf_region <- function(
     args.clean = list('x' = 25)) {
 
   onlyleaf <- im |> imager::grayscale()
-  onlyleaf[calibration_square] <- 1
+
+  if (!missing(calibration_square)) {
+    onlyleaf[calibration_square] <- 1
+  }
 
   onlyleaf <- do.call(imager::medianblur,
                       args = c(list('im' = onlyleaf), args.medianblur))
@@ -81,10 +85,10 @@ extract_leaf_region <- function(
   onlyleaf <- !onlyleaf
 
   onlyleaf <- do.call(imager::clean,
-                      args = c(list('im' = onlyleaf), args.clean))
+                      args = c(list('px' = onlyleaf), args.clean))
 
   onlyleaf <- do.call(imager::fill,
-                      args = c(list('im' = onlyleaf), args.clean))
+                      args = c(list('px' = onlyleaf), args.clean))
 }
 
 

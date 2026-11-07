@@ -16,7 +16,8 @@ extract_leaf_region(
 \item{im}{a `cimg` object.}
 
 \item{calibration_square}{one-dimensional pixset the same size as `im` that
-represents a calibration square area we know to ignore.}
+represents a calibration square area we know to ignore. If missing, assumed
+to be already removed from image.}
 
 \item{args.medianblur}{named list of arguments to be passed to
 [imager::medianblur()]. Default is `list('n' = 10, 'threshold' = 0.5)`.}

@@ -4,7 +4,7 @@
 \alias{extract_calibration_square}
 \title{Extract the calibration square as a pixset.}
 \usage{
-extract_calibration_square(im, rmin, gmax, bmax)
+extract_calibration_square(im, rmin = 0.8, gmax = 0.6, bmax = 0.6)
 }
 \arguments{
 \item{im}{a `cimg` object.}

@@ -28,4 +28,9 @@ Useful links:
 \author{
 \strong{Maintainer}: Eric Reyes \email{reyesem@rose-hulman.edu}
 
+Authors:
+\itemize{
+  \item Eric Reyes \email{reyesem@rose-hulman.edu}
+}
+
 }
