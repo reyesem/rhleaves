@@ -1,0 +1,19 @@
+# Authors and Citation
+
+## Authors
+
+- **Eric Reyes**. Author, maintainer.
+
+## Citation
+
+Reyes E (2025). *rhleaves: Leaf attributes from plants at Rose-Hulman
+Institute of Technology*. R package version 0.1.0,
+<https://reyesem.github.io/rhleaves/>.
+
+    @Manual{,
+      title = {rhleaves: Leaf attributes from plants at Rose-Hulman Institute of Technology},
+      author = {Eric Reyes},
+      year = {2025},
+      note = {R package version 0.1.0},
+      url = {https://reyesem.github.io/rhleaves/},
+    }
